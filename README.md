@@ -1,16 +1,27 @@
 # travel
+## จิรกิตติ์ คำป่าตัน 67543210014-6
 
-A new Flutter project.
+แอปนี้เป็น คู่มือท่องเที่ยวและสินค้า OTOP จังหวัดเชียงใหม่
 
-## Getting Started
+โครงสร้าง
+main.dart
+├── models/
+│   ├── attraction.dart       → ข้อมูลสถานที่
+│   └── otop_product.dart     → ข้อมูลสินค้า OTOP
+├── database/
+│   └── database_helper.dart  → SQLite (sqflite)
+├── providers/
+│   ├── attraction_provider.dart
+│   └── otop_provider.dart
+└── screens/
+    ├── home_screen.dart
+    ├── attraction_list/detail_screen.dart
+    └── otop_list/detail_screen.dart
 
-This project is a starting point for a Flutter application.
+แอปนี้จะเป็นการแนะนำและสินค้า otop ของจังหวัดเชียงใหม่
+แอปจะนำเสนอสถานที่สำคัญในจังหวัดเชียงใหม่พร้อมข้อมูลเชิงลึก ทั้งรายละเอียดและประวัติความเป็นมา เพื่อให้นักท่องเที่ยวและผู้สนใจสามารถศึกษาและวางแผนการเที่ยวได้
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="images/สถานที่.png">
+<img src="images/รายละเอียดสถานที่.png">
+<img src="images/สินค้า.png">
+<img src="images/รายละเอียดสินค้า.png">
